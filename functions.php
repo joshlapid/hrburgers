@@ -10,6 +10,7 @@ add_action( 'wp_enqueue_scripts', 'halphen_script_enqueue' );
 
 function halphen_theme_setup() {
 
+    // Adds menus button under Appearance section on Wordpress admin.
     add_theme_support( 'menus' );
 
     register_nav_menu( 'primary', 'Primary Header Navigation' );
@@ -19,4 +20,10 @@ function halphen_theme_setup() {
 
 add_action( 'init', 'halphen_theme_setup' );
 
+// This doesn't need to be part of a function because it is inside of the functions.php file. Same case for the 'menus' inside of halphen_theme_setup.
+add_theme_support( 'custom-background' );
+// Enables Custom header under appearance
+add_theme_support( 'custom-header' );
+// Enables Featured Image on posts
+add_theme_support( 'post-thumbnails' );
 ?>

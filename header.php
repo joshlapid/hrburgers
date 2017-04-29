@@ -20,3 +20,6 @@
     <body <?php body_class( $halphen_classes ) ?>>
 
         <?php wp_nav_menu( array('theme_location' => 'primary' ) ); ?>
+
+        <!-- This will print the custom header to each of the pages since its in the header.php file. -->
+        <img src="<?php header_image(); ?>" alt="" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>">
