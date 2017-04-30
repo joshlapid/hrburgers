@@ -8,6 +8,7 @@
 
     </head>
 
+<!-- Creates arrays of classes depending on whether or not you are on the front page -->
     <?php
 
         if( is_front_page() ):
@@ -17,6 +18,7 @@
         endif;
     ?>
 
+<!-- Body class accesses the $halphen_classes variable created above to add a class to the body. -->
     <body <?php body_class( $halphen_classes ) ?>>
 
         <?php wp_nav_menu( array('theme_location' => 'primary' ) ); ?>

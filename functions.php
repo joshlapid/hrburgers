@@ -1,13 +1,19 @@
 <?php
-
+/*
+    Include Scripts
+*/
 function halphen_script_enqueue() {
 
     wp_enqueue_style( 'customstyle', get_template_directory_uri() . '/css/halphen.css', array(), '1.0.0', 'all' );
     wp_enqueue_script( 'customjs', get_template_directory_uri() . '/js/halphen.js', array(), '1.0.0', true );
+    wp_enqueue_script( 'jquery' );
 }
 
 add_action( 'wp_enqueue_scripts', 'halphen_script_enqueue' );
 
+/*
+    Activate Menus
+*/
 function halphen_theme_setup() {
 
     // Adds menus button under Appearance section on Wordpress admin.
