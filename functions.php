@@ -26,4 +26,6 @@ add_theme_support( 'custom-background' );
 add_theme_support( 'custom-header' );
 // Enables Featured Image on posts
 add_theme_support( 'post-thumbnails' );
+
+add_theme_support( 'post-formats', array( 'aside', 'image', 'video' ) );
 ?>
