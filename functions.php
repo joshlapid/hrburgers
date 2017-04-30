@@ -4,9 +4,14 @@
 */
 function halphen_script_enqueue() {
 
+    // CSS
+    wp_enqueue_style( 'boostrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.7', 'all' );
     wp_enqueue_style( 'customstyle', get_template_directory_uri() . '/css/halphen.css', array(), '1.0.0', 'all' );
-    wp_enqueue_script( 'customjs', get_template_directory_uri() . '/js/halphen.js', array(), '1.0.0', true );
+
+    // JS
     wp_enqueue_script( 'jquery' );
+    wp_enqueue_script( 'bootstrapjs', get_template_directory_uri() . '/js/bootstrap.min.js', array(), '3.3.7', true );
+    wp_enqueue_script( 'customjs', get_template_directory_uri() . '/js/halphen.js', array(), '1.0.0', true );
 }
 
 add_action( 'wp_enqueue_scripts', 'halphen_script_enqueue' );

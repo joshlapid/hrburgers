@@ -29,3 +29,6 @@
 - Replaced formatting in the post loop on index.php with get_template_part( 'content', get_post_format() ); to change the format of the post to correspond to the chosen post format.
 
 - Added JQuery using the wp_enqueue_script hook. Jquery is already built in so all I needed to do was add wp_enqueue_script('jquery').
+- Added Bootstrap using the wp_enqueue_style and wp_enqueue_script. Also added bootstrap font folder.
+- Created a Bootstrap container to hold all of the content.
+- Integrated Bootstrap navbar classes into the wp_nav_menu function so that the menu is functional with Bootstrap.

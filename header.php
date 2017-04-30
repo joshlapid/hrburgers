@@ -21,7 +21,38 @@
 <!-- Body class accesses the $halphen_classes variable created above to add a class to the body. -->
     <body <?php body_class( $halphen_classes ) ?>>
 
-        <?php wp_nav_menu( array('theme_location' => 'primary' ) ); ?>
+        <div class="container">
 
-        <!-- This will print the custom header to each of the pages since its in the header.php file. -->
-        <img src="<?php header_image(); ?>" alt="" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>">
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav class="navbar navbar-default">
+                            <div class="container-fluid">
+                              <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                  <span class="sr-only">Toggle navigation</span>
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">Halphen Red</a>
+                              </div>
+                              <div id="navbar" class="navbar-collapse collapse">
+
+                                    <?php
+                                        wp_nav_menu( array(
+                                            'theme_location' => 'primary',
+                                            'container' => false,
+                                            'menu_class' => 'nav navbar-nav navbar-right'
+                                            )
+                                        );
+                                    ?>
+
+                              </div><!--/.nav-collapse -->
+                            </div><!--/.container-fluid -->
+                          </nav>
+
+                </div>
+            </div>
+
+            <!-- This will print the custom header to each of the pages since its in the header.php file. -->
+            <img src="<?php header_image(); ?>" alt="" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>">
