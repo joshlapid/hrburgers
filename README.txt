@@ -32,3 +32,11 @@
 - Added Bootstrap using the wp_enqueue_style and wp_enqueue_script. Also added bootstrap font folder.
 - Created a Bootstrap container to hold all of the content.
 - Integrated Bootstrap navbar classes into the wp_nav_menu function so that the menu is functional with Bootstrap.
+
+- Created a custom template for home page (page-10.php).
+- Added Bootstrap jumbotron that intakes WP header image for background.
+- Added some Google fonts.
+- Made a few styling adjustments in the halphen.css file.
+- Added navbar opacity effect on scroll down.
+
+*Needs to fix: JQuery CDN bug.
