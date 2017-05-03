@@ -1,3 +1,8 @@
+==================================================
+This is a WordPress template I am creating from the ground up.
+==================================================
+
+
 4/23/2017
 - Setup phpMyAdmin, Apache and mySQL.
 - Setup header.php, footer.php, index.php, functions.php along with CSS and JS folders according to WordPress theme standards.
@@ -38,5 +43,14 @@
 - Added some Google fonts.
 - Made a few styling adjustments in the halphen.css file.
 - Added navbar opacity effect on scroll down.
+
+=========================
+5/2/2017
+- Got website working with Bluehost.
+
+========================
+5/3/2017
+
+
 
 *Needs to fix: JQuery CDN bug.

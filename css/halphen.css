@@ -4,6 +4,10 @@ h1 {
     color: white !important;
 }
 
+h2, h3 {
+    color: white;
+}
+
 p {
     font-family: 'Open Sans', sans-serif;
     color: white;
@@ -38,6 +42,7 @@ p {
     background-position: center;
     display: flex;
     align-items: center;
+    margin-bottom: 0px;
 }
 
 .opaque-navbar {

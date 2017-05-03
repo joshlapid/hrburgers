@@ -8,25 +8,20 @@
 <div class="jumbotron" style="background-image: url(<?php header_image(); ?>);">
     <div class="container">
         <h1>Burger of the Month</h1>
-        <p>Pepperjack Jalapeno Burger</p>
-    </div>
-</div>
 
 <?php
 if( have_posts() ):
 
     while( have_posts() ): the_post(); ?>
+        <?php the_content() ?>
 
-        <p><?php the_content() ?></p>
-
-        <h3><?php the_title() ?></h3>
-
-        <hr/>
 
     <?php endwhile;
 
 endif;
 
 ?>
+    </div>
+</div>
 
 <?php get_footer(); ?>
