@@ -14,8 +14,14 @@ $("#menu-item-59").click(function() {
         'slow');
 });
 
-$(".contact-us-button-mobile").click(function() {
+$("#menu-item-58").click(function() {
     $('html,body').animate({
-        scrollTop: $("#contact-us").offset().top},
+        scrollTop: $("#menu-container").offset().top},
+        'slow');
+});
+
+$("#menu-item-60").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#delivery-container").offset().top},
         'slow');
 });

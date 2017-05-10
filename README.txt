@@ -49,8 +49,8 @@ This is a WordPress template I am creating from the ground up.
 - Got website working with Bluehost.
 
 ========================
-5/3/2017
-
+5/10/2017
+- Converted website design to a one-page format.
 
 
 *Needs to fix: JQuery CDN bug.
