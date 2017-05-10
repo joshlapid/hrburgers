@@ -1,59 +1,73 @@
+/* Global */
 h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: white !important;
-}
+  font-family: "Roboto", sans-serif;
+  font-weight: 700; }
 
 p {
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-}
+  font-family: "Open Sans", sans-serif; }
 
+/* Navbar */
 .navbar-inverse {
-    /*background-color: rgba(0, 0, 0, 0.3);*/
-    color: white;
-    border: 0px solid black;
-}
+  /*background-color: rgba(0, 0, 0, 0.3);*/
+  color: white;
+  border: 0px solid black; }
 
 .navbar-brand {
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 1px;
-    color: white !important;
-    padding-top: 20px;
-}
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  color: white !important;
+  padding-top: 20px; }
 
-#navbar > .nav > .menu-item> a {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.jumbotron {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-}
+#navbar > .nav > .menu-item > a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px; }
 
 .opaque-navbar {
-    background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
-    height: 60px;
-    border-bottom: 0px;
-    transition: background-color .5s ease 0s;
-}
+  height: 60px;
+  border-bottom: 0px;
+  transition: background-color .5s ease 0s; }
 
 .opaque-navbar.opaque {
-    background-color: black;
-    height: 60px;
-    transition: background-color .5s ease 0s;
-}
+  background-color: black;
+  height: 60px;
+  transition: background-color .5s ease 0s; }
 
 ul.dropdown-menu {
-    background-color: black;
-}
+  background-color: black; }
+
+/* Main Banner */
+.jumbotron {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center; }
+
+#main-banner-container {
+  margin-top: 80px;
+  margin-bottom: 80px; }
+  #main-banner-container h1, #main-banner-container h2, #main-banner-container h3, #main-banner-container p {
+    color: white; }
+
+/* About Us */
+#about-us-container {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+/* Menu */
+#menu-container {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+/* Delivery */
+#delivery-container {
+  padding-top: 60px;
+  padding-bottom: 60px; }
+
+/*# sourceMappingURL=halphen.css.map */

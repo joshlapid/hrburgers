@@ -7,3 +7,15 @@ $(window).scroll(function() {
       $('.opaque-navbar').removeClass('opaque');
   }
 });
+
+$("#menu-item-59").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#about-us-container").offset().top},
+        'slow');
+});
+
+$(".contact-us-button-mobile").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#contact-us").offset().top},
+        'slow');
+});

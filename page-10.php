@@ -5,28 +5,48 @@
 
 <?php get_header(); ?>
 
+<!-- Main Banner -->
 <div class="jumbotron" style="background-image: url(<?php header_image(); ?>);">
-    <div class="container">
+    <div id="main-banner-container" class="container">
         <h1>Burger of the Month</h1>
-        <p>Pepperjack Jalapeno Burger</p>
-    </div>
-</div>
 
 <?php
 if( have_posts() ):
 
     while( have_posts() ): the_post(); ?>
+        <?php the_content() ?>
 
-        <p><?php the_content() ?></p>
-
-        <h3><?php the_title() ?></h3>
-
-        <hr/>
 
     <?php endwhile;
 
 endif;
 
 ?>
+    </div>
+</div>
+
+<!-- About Us -->
+<div id="about-us-container" class="container-fluid">
+    <div class="container">
+        <h1 class="text-center">About Us</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+</div>
+
+<!-- Menu -->
+<div id="menu-container" class="container-fluid">
+    <div class="container">
+        <h1 class="text-center">Menu</h1>
+        <?php echo do_shortcode("[fdm-menu id=56]"); ?>
+    </div>
+</div>
+
+<!-- Menu -->
+<div id="delivery-container" class="container-fluid">
+    <div class="container">
+        <h1 class="text-center">Delivery</h1>
+        <p>Uber Eats</p>
+    </div>
+</div>
 
 <?php get_footer(); ?>
