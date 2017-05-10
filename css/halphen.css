@@ -3,6 +3,10 @@ h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 700; }
 
+h2, h3 {
+    color: white;
+}
+
 p {
   font-family: "Open Sans", sans-serif; }
 
