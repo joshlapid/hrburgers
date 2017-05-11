@@ -3,10 +3,6 @@ h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 700; }
 
-h2, h3 {
-    color: white;
-}
-
 p {
   font-family: "Open Sans", sans-serif; }
 
@@ -51,27 +47,49 @@ ul.dropdown-menu {
   background-size: cover;
   background-position: center;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 0px; }
 
 #main-banner-container {
-  margin-top: 80px;
-  margin-bottom: 80px; }
+  margin-top: 180px;
+  margin-bottom: 120px; }
   #main-banner-container h1, #main-banner-container h2, #main-banner-container h3, #main-banner-container p {
     color: white; }
 
 /* About Us */
 #about-us-container {
+  background-color: rgba(0, 0, 0, 0.2);
   padding-top: 60px;
   padding-bottom: 60px; }
+  #about-us-container h1 {
+    font-size: 48px; }
+  #about-us-container p {
+    font-size: 18px;
+    text-align: justify; }
 
 /* Menu */
 #menu-container {
+  background-color: #801515;
   padding-top: 60px;
   padding-bottom: 60px; }
+  #menu-container h1, #menu-container h3, #menu-container p, #menu-container hr {
+    color: white; }
+  #menu-container .fdm-section-header {
+    border-bottom: 1px solid white; }
 
 /* Delivery */
 #delivery-container {
   padding-top: 60px;
   padding-bottom: 60px; }
+
+/* Footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  height: 180px; }
+  footer p {
+    color: white;
+    margin: 0px auto; }
 
 /*# sourceMappingURL=halphen.css.map */

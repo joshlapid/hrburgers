@@ -45,7 +45,7 @@ endif;
 <div id="delivery-container" class="container-fluid">
     <div class="container">
         <h1 class="text-center">Delivery</h1>
-        <p>Uber Eats</p>
+        <p class="text-center">Uber Eats/Grubhub placeholder</p>
     </div>
 </div>
 

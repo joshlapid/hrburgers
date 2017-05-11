@@ -60,11 +60,12 @@ ul.dropdown-menu {
     background-position: center;
     display: flex;
     align-items: center;
+    margin-bottom: 0px;
 }
 
 #main-banner-container {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 180px;
+    margin-bottom: 120px;
 
     h1, h2, h3, p {
         color: white;
@@ -73,18 +74,53 @@ ul.dropdown-menu {
 
 /* About Us */
 #about-us-container {
+    background-color: rgba(0, 0, 0, 0.2);
     padding-top: 60px;
     padding-bottom: 60px;
+
+    h1 {
+        // color: white;
+        font-size: 48px;
+    }
+
+    p {
+        // color: white;
+        font-size: 18px;
+        text-align: justify;
+    }
 }
 
 /* Menu */
 #menu-container {
+    background-color: #801515;
     padding-top: 60px;
     padding-bottom: 60px;
+
+    h1, h3, p, hr {
+        color: white;
+    }
+
+    .fdm-section-header {
+        border-bottom: 1px solid white;
+    }
+
 }
 
 /* Delivery */
 #delivery-container {
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    height: 180px;
+
+    p {
+        color: white;
+        margin: 0px auto;
+    }
 }
